@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+        <link rel="stylesheet" href="css/mystyle.css">
+        <title>Contact US</title>
+    </head>
+
+    <body>
+<!--PC NAV-->
+    <div class="ui tablet computer only padded grid">
+        <div class="ui container">
+            <div class="ui inverted borderless huge menu">
+                <img class="ui mini circular image" src="images/logo.png" alt="WEMC LOGO">
+
+                <a href="index.html" class="header item">Waterford Electronic Music Club</a>
+                <a href="index.html" class="item">Home</a> 
+                <a href="about.html" class="item">About</a>
+                <a href="contact.html" class="item">Contact Us</a>
+                <a href="register.html" class="active item">Register</a>
+
+                <div class="ui dropdown item">
+                    More Details<i class="dropdown icon"></i>
+                <div class="menu">
+                    <a href="https://en.wikipedia.org/wiki/Record_producer" class="item">Production</a> 
+                    <a href="https://en.wikipedia.org/wiki/Mixing_engineer" class="item">Mixing</a>
+                    <a href="https://en.wikipedia.org/wiki/Mastering_engineer" class="item">Mastering</a>
+                </div>
+                </div>
+
+                <button class="ui facebook icon button">
+                    <i class="facebook icon"></i>
+                  </button>
+                  <button class="ui twitter icon button">
+                    <i class="twitter icon"></i>
+                  </button>
+                  <button class="ui linkedin icon button">
+                    <i class="linkedin icon"></i>
+                  </button>
+                  <button class="ui google plus icon button">
+                    <i class="google plus icon"></i>
+                  </button>
+
+            </div>
+        </div>
+    </div>
+<!--MOBILE NAV-->
+    <div class="ui mobile only grid">
+        <div class="ui top fixed inverted borderless huge menu">
+
+            <img class="ui mini circular image" src="images/logo.png" alt="WEMC LOGO">
+            <a class="header item">Waterford Electronic Music Club</a>
+            <div class="right menu">
+            <div class="item">
+                <button class="ui icon toggle basic inverted button">
+                    <i class="content icon"></i>
+                </button>
+            </div>
+            </div>
+
+            <div class="ui vertical borderless inverted fluid menu">
+                <a href="index.html" class="item">Home</a> 
+                <a href="about.html" class="item">About</a>
+                <a href="contact.html" class="item">Contact Us</a>
+                <a href="register.html" class="active item">Register</a>
+
+                <div class="ui dropdown item">
+                    More Details<i class="dropdown icon"></i>
+                <div class="menu">
+                    <a href="https://en.wikipedia.org/wiki/Record_producer" class="item">Production</a> 
+                    <a href="https://en.wikipedia.org/wiki/Mixing_engineer" class="item">Mixing</a>
+                    <a href="https://en.wikipedia.org/wiki/Mastering_engineer" class="item">Mastering</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--HEAD-->
+<div class="slide">
+    <div class="ui inverted vertical center aligned segment"></div>
+</div>
+    <!--BREADCRUMB-->
+    <div class="ui container">
+        <div class="ui breadcrumb">
+            <a class="section">Home</a>
+            <div class="divider"> / </div>
+            <a class="section">Register</a>
+        </div>
+    </div>
+<!--FORM-->
+    <div class="ui raised very padded container segment">
+    <form class="ui form">
+        <h3 class="ui dividing header">Register for Classes</h3>
+
+        <div class="field">
+            <label>Name</label>
+        <div class="two fields">
+            <div class="field">
+                <input type="text" id="first-name" required pattern="[A-Z][a-z]+( [A-Z][a-z]+)*" placeholder="First Name">
+            </div>
+            <div class="field">
+                <input type="text" id="last-name" required pattern="[A-Z][a-z]+( [A-Z][a-z]+)*" placeholder="Last Name">
+            </div>
+        </div>
+        </div>
+
+        
+        <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" title="Please enter a valid email address such as John@email.com" required pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" placeholder="Email Address">
+        </div>
+
+        <div class="field">
+            <label>Address</label>
+        <div class="fields">
+        <div class="sixteen wide field">
+            <input type="text" id="address" placeholder="Street Address">
+        </div>
+        </div>
+        </div>
+
+    <div class="two fields">
+        <div class="field">
+            <label>County</label>
+        <select class="ui fluid dropdown">
+            <option value="WT">Waterford</option>
+            <option value="WX">Wexford</option>
+            <option value="TP">Tipperary</option>
+            <option value="KL">Kilkenny</option>
+        </select>
+        </div>
+        <div class="field">
+            <label>Which Class Do You Want to Enroll to?</label>
+        <select class="ui fluid dropdown">
+            <option value="prd">Production</option>
+            <option value="mix">Mixing</option>
+            <option value="mas">Mastering</option>
+        </select>
+        </div>
+    </div>
+
+    <div class="field">
+        <label for="passw">Password</label>
+        <input type="password" id="passw" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{6,}$">
+    </div>
+
+    <h4 class="ui dividing header">Billing Information</h4>
+        <div class="field">
+            <label>Card Type</label>
+        <div class="ui selection dropdown">
+            <input type="hidden" name="card[type]">
+        <div class="default text">Type</div>
+            <i class="dropdown icon"></i>
+        <div class="menu">
+            <div class="item" data-value="visa">
+                <i class="visa icon"></i>
+                    Visa
+            </div>
+            <div class="item" data-value="amex">
+                <i class="amex icon"></i>
+                    American Express
+            </div>
+            <div class="item" data-value="discover">
+                <i class="discover icon"></i>
+                    Discover
+            </div>
+        </div>
+        </div>
+        </div>
+
+    <div class="fields">
+        <div class="seven wide field">
+            <label for="card">Card Number</label>
+            <input type="text" id="card" maxlength="16" placeholder="Card #">
+        </div>
+        <div class="three wide field">
+            <label for="cvc">CVC</label>
+        <input type="text" id="cvc" maxlength="3" placeholder="CVC">
+        </div>
+
+        <div class="six wide field">
+            <label>Expiration</label>
+        <div class="two fields">
+            <div class="field">
+                <select class="ui fluid search dropdown" name="card[expire-month]">
+                    <option value="">Month</option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+            </div>
+            <div class="field">
+                <input type="text" name="card[expire-year]" maxlength="4" placeholder="Year">
+            </div>
+        </div>
+        </div>
+    </div>
+    <input class="ui orange button" type="submit">
+  </form>
+</div>
+
+<div class="ui raised container segment">
+    <div class="ui ordered steps">
+        <div class="Active step">
+        <div class="content">
+            <div class="title">Register</div>
+            <div class="description">Register For Classes</div>
+        </div>
+        </div>
+        <div class="active step">
+        <div class="content">
+            <div class="title">Billing</div>
+            <div class="description">Enter billing information</div>
+        </div>
+        </div>
+        <div class="active step">
+        <div class="content">
+            <div class="title">Confirm Order</div>
+            <div class="description">Verify order details</div>
+        </div>
+        </div>
+        <div class="active step">
+            <div class="content">
+                <div class="title">Schedule</div>
+                <div class="description">Schedule Classes</div>
+            </div>
+            </div>
+    </div>
+</div>
+<!--FOOTER-->
+    <footer class="ui vertical container">
+        <div class="ui divider"></div>
+    <div class="ui two column grid">
+
+        <div class="column">
+            &copy; 2022 WEMC Company, Inc.
+        </div>
+
+        <div class="right aligned column">
+            <a href="#root">Back to top</a>
+        </div>
+
+    </div>
+</footer>
+<!--JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+        <script>
+            $(document).ready(function() {
+            $(".ui.toggle.button").click(function() {
+                $(".mobile.only.grid .ui.vertical.menu").toggle(100);
+            });
+
+            $(".ui.dropdown").dropdown();
+
+            });
+        </script>
+    </body>
+</html>
