@@ -7,7 +7,7 @@
         <title>About</title>
     </head>
 
-    <body>
+    <body class="otherPages">
 <!--PC NAV-->
     <div class="ui tablet computer only padded grid">
         <div class="ui container">
@@ -41,7 +41,9 @@
                   <button class="ui google plus icon button">
                     <i class="google plus icon"></i>
                   </button>
-
+                  <button class="ui icon button" id="darkModeButton">
+                    <i class="adjust icon"></i>
+                  </button>
             </div>
         </div>
     </div>
@@ -100,6 +102,19 @@
             <p class="plarge">
                 We are a group of passionate musicians who want to pass down the skills and knowledge for those who are interested in electronic muisc production. We enjoy teaching to those who are passionate and comitted. We offer 1-on-1 and group sessions but due to COVID-19 these will be done online.
             </p>
+            <div class="ui button" id="button1">Read More</div>
+            <p class="plarge" id="showHide">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet nibh praesent tristique magna sit amet purus. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Sed arcu non odio euismod lacinia at. Nam libero justo laoreet sit amet cursus sit amet. Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Netus et malesuada fames ac. Sit amet consectetur adipiscing elit duis. Nisi est sit amet facilisis magna etiam. Nulla facilisi etiam dignissim diam quis enim. Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec.
+                <br><br>
+                Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Risus commodo viverra maecenas accumsan. Vitae nunc sed velit dignissim sodales. Adipiscing elit ut aliquam purus sit amet luctus venenatis lectus. Posuere morbi leo urna molestie at elementum eu facilisis sed. Sollicitudin nibh sit amet commodo. Rutrum quisque non tellus orci ac auctor augue. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet facilisis.
+                <br><br>
+                Eu feugiat pretium nibh ipsum consequat nisl vel. Sodales ut etiam sit amet nisl purus in mollis nunc. At imperdiet dui accumsan sit amet nulla facilisi. Sodales ut eu sem integer. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper. Eget nunc scelerisque viverra mauris in. Neque vitae tempus quam pellentesque. Eget nullam non nisi est sit amet facilisis magna. Ultricies leo integer malesuada nunc vel risus. Nisl vel pretium lectus quam id leo in vitae. Ut aliquam purus sit amet. Facilisis sed odio morbi quis commodo odio aenean sed. In metus vulputate eu scelerisque felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Morbi blandit cursus risus at ultrices mi.
+                <br><br>
+                Pharetra magna ac placerat vestibulum lectus mauris ultrices eros in. Curabitur vitae nunc sed velit dignissim sodales ut. Magna eget est lorem ipsum dolor. Phasellus faucibus scelerisque eleifend donec. Varius quam quisque id diam vel quam elementum pulvinar. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Tincidunt tortor aliquam nulla facilisi cras fermentum. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Nunc scelerisque viverra mauris in. Posuere urna nec tincidunt praesent semper feugiat nibh. Amet justo donec enim diam vulputate ut.
+                <br><br>
+                In massa tempor nec feugiat nisl pretium. Urna et pharetra pharetra massa massa ultricies mi. Proin fermentum leo vel orci. Id volutpat lacus laoreet non curabitur gravida. Ut porttitor leo a diam. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis. Placerat duis ultricies lacus sed. Potenti nullam ac tortor vitae purus faucibus. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. Venenatis tellus in metus vulputate. Lorem sed risus ultricies tristique. Sed blandit libero volutpat sed cras ornare arcu. Non diam phasellus vestibulum lorem sed risus ultricies tristique. Ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Morbi enim nunc faucibus a pellentesque sit. Mattis enim ut tellus elementum sagittis. Consequat id porta nibh venenatis cras. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat.
+                <br><br>
+                Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Risus commodo viverra maecenas accumsan. Vitae nunc sed velit dignissim sodales. Adipiscing elit ut aliquam purus sit amet luctus venenatis lectus. Posuere morbi leo urna molestie at elementum eu facilisis sed. Sollicitudin nibh sit amet commodo. Rutrum quisque non tellus orci ac auctor augue. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet facilisis.
             <p class="plarge">
                 We offer varying prices and tiers of classes. Please call us or contact us using the form <a href="contact.html">here.</a>
             </p>
@@ -184,16 +199,8 @@
     </div>
 <!--JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-        <script>
-            $(document).ready(function() {
-            $(".ui.toggle.button").click(function() {
-                $(".mobile.only.grid .ui.vertical.menu").toggle(100);
-            });
-
-            $(".ui.dropdown").dropdown();
-            
-            });
-        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>

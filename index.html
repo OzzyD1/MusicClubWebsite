@@ -15,13 +15,11 @@
         <div class="ui container">
             <div class="ui inverted borderless huge menu">
                 <img class="ui mini circular image" src="images/logo.png" alt="WEMC LOGO">
-
                 <a href="index.html" class="header item">Waterford Electronic Music Club</a>
                 <a href="index.html" class="active item">Home</a> 
                 <a href="about.html" class="item">About</a>
                 <a href="contact.html" class="item">Contact Us</a>
                 <a href="register.html" class="item">Register</a>
-
                 <div class="ui dropdown item">
                     More Details<i class="dropdown icon"></i>
                 <div class="menu">
@@ -30,20 +28,18 @@
                     <a href="https://en.wikipedia.org/wiki/Mastering_engineer" class="item">Mastering</a>
                 </div>
                 </div>
-
                 <button class="ui facebook icon button">
                     <i class="facebook icon"></i>
-                  </button>
-                  <button class="ui twitter icon button">
+                </button>
+                <button class="ui twitter icon button">
                     <i class="twitter icon"></i>
-                  </button>
-                  <button class="ui linkedin icon button">
+                </button>
+                <button class="ui linkedin icon button">
                     <i class="linkedin icon"></i>
-                  </button>
-                  <button class="ui google plus icon button">
-                    <i class="google plus icon"></i>
-                  </button>
-
+                </button>
+                <button class="ui icon button" id="darkModeButton">
+                    <i class="adjust icon"></i>
+                </button>
             </div>
         </div>
     </div>
@@ -199,21 +195,7 @@
 <!--JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-        <script>
-            $(document).ready(function() {
-            $(".ui.toggle.button").click(function() {
-                $(".mobile.only.grid .ui.vertical.menu").toggle(100);
-            });
-    
-            $(".ui.dropdown").dropdown();
-    
-            $(".slide").slick({
-                autoplay: true,
-                dots: true,
-                speed: 500
-                });
-            });
-        </script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>

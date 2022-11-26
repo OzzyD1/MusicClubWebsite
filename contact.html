@@ -7,7 +7,7 @@
         <title>Contact US</title>
     </head>
 
-    <body>
+    <body class="otherPages">
 <!--PC NAV-->
     <div class="ui tablet computer only padded grid">
         <div class="ui container">
@@ -41,7 +41,9 @@
                   <button class="ui google plus icon button">
                     <i class="google plus icon"></i>
                   </button>
-
+                  <button class="ui icon button" id="darkModeButton">
+                    <i class="adjust icon"></i>
+                  </button>
             </div>
         </div>
     </div>
@@ -90,30 +92,20 @@
     </div>
 <!--FORM-->
     <div class="ui raised very padded container segment">
-        <div class="ui left attached rail">
-            <div class="ui segment">
-              Or Call at 051123123
-            </div>
-        </div>
         <h3 class="ui dividing header">If you have any queries please do not hesitate to contact us using the form below:</h3>
-
         <form class="ui form">
-
             <div class="field">
                 <label for="name">Name</label>
                 <input type="text" id="name" required pattern="[A-Z][a-z]+( [A-Z][a-z]+)*" placeholder="Full Name">
             </div>
-
             <div class="field">
                 <label for="email">Email</label>
                 <input type="email" id="email" title="Please enter a valid email address such as John@email.com" required pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" placeholder="Email Address">
             </div>
-
             <div class="field">
                 <label for="query">Type your Query Here:</label>
                 <textarea id="query" required></textarea>
             </div>
-
                 <input class="ui orange button" type="submit">
         </form>
     </div>
@@ -133,17 +125,9 @@
     </div>
 </footer>
 <!--JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-    <script>
-        $(document).ready(function() {
-        $(".ui.toggle.button").click(function() {
-            $(".mobile.only.grid .ui.vertical.menu").toggle(100);
-        });
-    
-        $(".ui.dropdown").dropdown();
-    
-        });
-        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>
