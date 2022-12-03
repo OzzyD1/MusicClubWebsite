@@ -1,41 +1,4 @@
-$(document).ready(function() {
-    $(".ui.toggle.button").click(function() {
-        $(".mobile.only.grid .ui.vertical.menu").toggle(100);
-    });
-
-    $(".ui.dropdown").dropdown();
-
-    $(".slide").slick({
-        autoplay: true,
-        dots: true,
-        speed: 500
-        });
-
-    $("#darkModeButton").click(function(){
-        $("body, h1, .ui.header").toggleClass("darkMode");
-        $("h1").css("background-color", "transparent");
-    });
-});
-
-// Show/Hide Element
-let showHide = () => {
-
-    let showHideDiv = document.getElementById("showHide");
-
-    if (showHideDiv.style.display === "block"){
-
-        showHideDiv.style.display = "none";
-
-    } else {
-
-        showHideDiv.style.display = "block"
-    }
-};
-
-let btn1 = document.getElementById("button1");
-btn1.addEventListener("click", showHide);
-
-let wemcjson = {
+let context = {
     "totalEmployees": 3,
     "totalStudents": 8,
     "openStudios": 3,
@@ -44,30 +7,36 @@ let wemcjson = {
         "Mixing",
         "Mastering"
     ],
-    "employees": [
+    "employee": [
         {
             "name": "Alex",
             "role": "Music Producer",
             "joined": 2018,
-            "students": 5
+            "students": 5,
+            "description": "Alex has been producing music since he was a teenager, now he has multuple albums streaming on Spotify.",
+            "image": "images/alex.jpg"
         },
         {
             "name": "Martha",
             "role": "Mixing Engineer",
             "joined": 2016,
-            "students": 8
+            "students": 8,
+            "description": "Martha was born in Canada. She has been obsessed with her fathers records since she was a toddler. Now she is a professional Mixing Engineer with many albums under her belt.",
+            "image": "images/sigmund1.jpg"
         },
         {
             "name": "Mark",
             "role": "Mastering Engineer",
             "joined": 2014,
-            "students": 2
+            "students": 2,
+            "description": "Mark has been mastering music for many years now and his name is on many records.",
+            "image": "images/mark.jpg"
         }
     ],
-    "members": [
+    "member": [
         {
             "name": "John",
-            "class": "Mixing",
+            "class": "Mixing", 
             "joined": 2020,
         },
         {
@@ -107,3 +76,47 @@ let wemcjson = {
         },
     ]
 }
+
+$(document).ready(function() {
+    $(".ui.toggle.button").click(function() {
+        $(".mobile.only.grid .ui.vertical.menu").toggle(100);
+    });
+
+    $(".ui.dropdown").dropdown();
+
+    $(".slide").slick({
+        autoplay: true,
+        dots: true,
+        speed: 500
+        });
+
+    
+    // Dark Mode
+    $("#darkModeButton").click(function(){
+        $("body, h1, .ui.header").toggleClass("darkMode");
+        $("h1").css("background-color", "transparent");
+        $(".ui.message, .ui.huge.button, .slick-dots, .active.item, .ui.inverted.segment").toggleClass("darkModeColour");
+    });
+
+    let template = Handlebars.compile($("#handlebars-demo").html())
+    let output = template(context);
+    $("#cards").append(output);
+});
+
+// Show/Hide Element
+let showHide = () => {
+
+    let showHideDiv = document.getElementById("showHide");
+
+    if (showHideDiv.style.display === "block"){
+
+        showHideDiv.style.display = "none";
+
+    } else {
+
+        showHideDiv.style.display = "block"
+    }
+};
+
+let btn1 = document.getElementById("button1");
+btn1.addEventListener("click", showHide);

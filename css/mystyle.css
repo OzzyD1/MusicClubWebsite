@@ -3,6 +3,11 @@
 	color: aliceblue !important;
 }
 
+.darkModeColour {
+	background-color: #07358F !important;
+	color: aliceblue !important;
+}
+
 .ui.inverted.segment {
 	background-color: #F3A712;
 	background-image: url(../images/studio.PNG);
